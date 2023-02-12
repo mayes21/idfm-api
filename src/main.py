@@ -14,18 +14,18 @@ def getIdfmApiData(line, stop_area):
 
 def storeTimesByShortNameAndLineDirection(response):
     result = {}
-    if response.status_code == 200:
-        json_response = json.dumps(response.json())
-        json_data = json.loads(json_response)
-        for data in json_data["nextDepartures"]["data"]:
-            key = (data["shortName"], data["lineDirection"])
-            if key in result:
-                result[key].append(data["time"])
-            else:
-                result[key] = [data["time"]]
-    else:
-        logger.error("The IDFM API is down.")
+    if response.status_code != 200:
+        logging.error("The IDFM API is down.")
         raise Exception("API down")
+
+    json_data = response.json()
+    for data in json_data["nextDepartures"]["data"]:
+        key = (data["shortName"], data["lineDirection"])
+        if key in result:
+            result[key].append(data["time"])
+        else:
+            result[key] = [data["time"]]
+
     return result
 
 def main():
