@@ -1,0 +1,15 @@
+# virtual environment
+.venv/
+bin/
+include/
+lib/
+pyvenv.cfg
+
+# Python cache files
+__pycache__/
+
+# MacOS Finder metadata
+.DS_Store
+
+# environment variables
+.env
