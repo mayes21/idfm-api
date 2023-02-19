@@ -1,0 +1,64 @@
+{
+    "nextDepartures": {
+      "data": [
+        {
+          "lineId": "line:IDFM:C01304",
+          "shortName": "360",
+          "lineDirection": "La Defense",
+          "time": "2",
+          "destination": {
+            "stopPointId": "stop_point:IDFM:LaDefense",
+            "stopAreaId": null
+          }
+        },
+        {
+          "lineId": "line:IDFM:C01304",
+          "shortName": "360",
+          "lineDirection": "Hopital de Garches",
+          "time": "10",
+          "destination": {
+            "stopPointId": "stop_point:IDFM:HopitaldeGarches",
+            "stopAreaId": null
+          }
+        },
+        {
+          "lineId": "line:IDFM:C01304",
+          "shortName": "360",
+          "lineDirection": "La Defense",
+          "time": "25",
+          "destination": {
+            "stopPointId": "stop_point:IDFM:LaDefense",
+            "stopAreaId": null
+          }
+        },
+        {
+          "lineId": "line:IDFM:C01304",
+          "shortName": "360",
+          "lineDirection": "Hopital de Garches",
+          "time": "39",
+          "destination": {
+            "stopPointId": "stop_point:IDFM:HopitaldeGarches",
+            "stopAreaId": null
+          }
+        }
+      ],
+      "statusCode": 200
+    },
+    "crowdsourcingReports": {
+      "congestions": [
+        {
+          "directionId": "stop_area:IDFM:70709",
+          "nearTimeReports": {
+            "rating": null
+          }
+        },
+        {
+          "directionId": "stop_area:IDFM:71517",
+          "nearTimeReports": {
+            "rating": null
+          }
+        }
+      ],
+      "statusCode": 200
+    }
+}
